@@ -1,0 +1,234 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f7f7f7;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.8rem;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #28a745;
+}
+
+.page-header {
+    background: linear-gradient(to right, #28a745, #218838);
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.page-header h1 {
+    font-size: 3rem;
+}
+
+.page-header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Services Section */
+.services-section {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 20px;
+}
+
+.service-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+.service-card h2 {
+    font-size: 1.8rem;
+    color: #28a745;
+}
+
+.service-card p {
+    margin-top: 10px;
+}
+
+/* About Section */
+.about-section {
+    display: flex;
+    align-items: center;
+    margin: 50px 20px;
+}
+
+.about-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.about-content h2 {
+    color: #28a745;
+    font-size: 2rem;
+}
+
+.about-content p {
+    margin-top: 20px;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 40px 20px;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+.contact-form label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.contact-form button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #218838;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Contact Info Section */
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 20px;
+}
+
+.contact-details {
+    flex: 1;
+    padding: 20px;
+}
+
+.contact-details h2 {
+    color: #28a745;
+    font-size: 1.8rem;
+}
+
+.contact-details p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.social-links {
+    flex: 1;
+    padding: 20px;
+}
+
+.social-links h2 {
+    color: #28a745;
+    font-size: 1.8rem;
+}
+
+.social-icon {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #28a745;
+}
+
+/* Social Icon Styles */
+.facebook:hover {
+    color: #3b5998;
+}
+
+.twitter:hover {
+    color: #00acee;
+}
+
+.instagram:hover {
+    color: #C13584;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+}
